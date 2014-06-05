@@ -1,0 +1,59 @@
+@import "var";
+
+body {
+  @include font-base;
+  background-color: $background;
+}
+
+.reveal .slides section {
+  background-color: $background;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 800;
+    line-height: $fontSize * 0.6;
+    padding-bottom: 20px;
+  }
+
+  h1 {
+    color: $accent;
+    font-size: $fontSize * 1.5;
+  }
+
+  h2 {
+    color: $light;
+    font-size: $fontSize * 1.3;
+    &.small {
+      font-size: $fontSize * 0.8;
+    }
+  }
+
+  h3 {
+    color: $dark;
+    font-size: $fontSize * 1.1;
+  }
+
+
+  strong {
+    font-weight: 700;
+  }
+
+  pre code {
+    font-size: $fontSize * 0.7;
+    line-height: $fontSize * 0.6;
+    padding: 15px;
+  }
+
+  a, a.roll {
+    color: $accent;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 50px;
+    &:hover {
+      color: $dark;
+    }
+  }
+
+  .strike {
+    text-decoration: line-through;
+  }
+}

@@ -1,0 +1,29 @@
+// FONT SIZE
+$fontSize: 2em;
+
+// COLORS
+$accent: #E64C66;
+$light: #1BBC9B;
+$dark: #2D3E50;
+$text: #333333;
+$background: lighten($text, 75%);
+
+@mixin font-base {
+  color: $text;
+  font: {
+    family: 'Open Sans', Arial, sans-serif;
+    size: $fontSize;
+    weight: 400;
+  }
+}
+
+
+@mixin transitionAll($time:1.5s) {
+  -webkit-transition: all $time ease;
+  -moz-transition: all $time ease;
+  transition: all $time ease;
+}
+
+@mixin textShadow {
+  text-shadow: 1px 1px 3px lighten($text, 20%);
+}

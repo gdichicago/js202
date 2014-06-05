@@ -1,0 +1,39 @@
+body {
+  color: #333333;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  background-color: #f2f2f2; }
+
+.reveal .slides section {
+  background-color: #f2f2f2; }
+  .reveal .slides section h1, .reveal .slides section h2, .reveal .slides section h3, .reveal .slides section h4, .reveal .slides section h5, .reveal .slides section h6 {
+    font-weight: 800;
+    line-height: 1.2em;
+    padding-bottom: 20px; }
+  .reveal .slides section h1 {
+    color: #e64c66;
+    font-size: 3em; }
+  .reveal .slides section h2 {
+    color: #1bbc9b;
+    font-size: 2.6em; }
+    .reveal .slides section h2.small {
+      font-size: 1.6em; }
+  .reveal .slides section h3 {
+    color: #2d3e50;
+    font-size: 2.2em; }
+  .reveal .slides section strong {
+    font-weight: 700; }
+  .reveal .slides section pre code {
+    font-size: 1.4em;
+    line-height: 1.2em;
+    padding: 15px; }
+  .reveal .slides section a, .reveal .slides section a.roll {
+    color: #e64c66;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 50px; }
+    .reveal .slides section a:hover, .reveal .slides section a.roll:hover {
+      color: #2d3e50; }
+  .reveal .slides section .strike {
+    text-decoration: line-through; }
