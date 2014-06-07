@@ -34,7 +34,7 @@ module.exports = (grunt) ->
                 tasks: ['jshint']
 
             sass:
-                files: ['css/source/theme.scss', 'css/source/exercises.scss']
+                files: ['css/source/theme.scss', 'css/source/website.scss']
                 tasks: ['sass']
 
         sass:
@@ -42,7 +42,6 @@ module.exports = (grunt) ->
             theme:
                 files:
                     'css/theme.css': 'css/source/theme.scss'
-                    'css/exercises.css': 'css/source/exercises.scss'
                     'css/website.css': 'css/source/website.scss'
 
         connect:
