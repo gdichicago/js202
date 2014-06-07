@@ -17,5 +17,21 @@
     "web-20.html",
     "async-v-sync.html",
     "synchronous.html",
-    "shoes-synchronous.html"
+    "shoes-synchronous.html",
+    "asynchronous.html",
+    "delivery-asynchronous.html",
+    "ajax.html",
+    "ajax-in-the-wild.html",
+    "ajax-what-else.html",
+    "web-10-vs-web-20.html",
+    "xmlhttprequest.html",
+    "creating-an-xmlhttprequest.html",
+    "sending-an-xmlhttprequest.html",
+    "handling-an-xmlhttprequest-response.html",
+    "processing-response.html",
+    "processing-json.html",
+    "wtf.html",
+    "but.html",
+    "relief.html",
+    "jquery-3-ajax.html"
 ]

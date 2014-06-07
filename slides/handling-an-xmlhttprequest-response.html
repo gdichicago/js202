@@ -1,0 +1,16 @@
+<h2>(3) Handling Response</h2>
+
+<pre><code class="js">function processRequest() {
+  if (request.readyState == 4) {
+    if(request.status == 200) {
+      processResponse(request);
+    } else {
+     alert("Error loading page " +
+       request.status + ":" +
+       request.statusText);
+    }
+  }
+}
+</code></pre>
+
+<p>You can use the <strong>readyState</strong> property to check if the request has been completed, and status to check if it completed successfully.</p>

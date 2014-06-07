@@ -1,0 +1,18 @@
+<h2>(5) Processing JSON</h2>
+
+<pre><code class="js">function processResponse(request) {
+var books = JSON.parse(request.responseText);
+
+for (var i = 0; i &lt; books.length; i++) {
+    var book = books[i];
+    var p = document.createElement('p');
+    p.innerHTML = book.title + ' by ' + book.author;
+    document.body.appendChild(p);
+  }
+}
+</code></pre>
+
+<p>Would evaluate to:<br>
+  Robot Dreams, by Isaac Asimov<br>
+  Pirate Cinema, by Cory Doctorow
+<p>
