@@ -3,7 +3,7 @@
  <head>
   <meta charset="utf-8">
   <title>Video Watcher</title>
-  <link rel="stylesheet" type="text/css" href="lib/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../lib/bootstrap.css">
  </head>
  <body>
 
@@ -25,19 +25,26 @@
  </div>
 </div>
 
- <script type="text/javascript" src="lib/youtube.js"></script>
- <script type="text/javascript" src="lib/jquery.min.js"></script>
+ <script type="text/javascript" src="../lib/youtube.js"></script>
+ <script type="text/javascript" src="../lib/jquery.min.js"></script>
  <script>
 
  var videos = [
   {"youtubeId": "TddFnTB_7IM",
-    "title": "Trip through the 80s"
+    "title": "Trip through the 80s",
+    "author": "meliberty"
   },
   {"youtubeId": "epUk3T2Kfno",
-    "title": "Otters Holding Hands"
+    "title": "Otters Holding Hands",
+    "author": "cynthiaholmes"
   },
   {"youtubeId": "il2IrgFHfsg",
-    "title": "The Ooooh Cat"
+    "title": "The Ooooh Cat",
+    "author": "RnBTree"
+  },
+  {"youtubeId": "oOlDewpCfZQ",
+    "title": "Four Chords",
+    "author": "axisofawesome"
   }
  ];
 
@@ -53,13 +60,18 @@
 
     videoLink.on('click', function(e) {
         e.preventDefault();
+        var videoTitle = $('<h2>');
+        videoTitle.html(video.title + ' <small>' + video.author + '</small>');
         var videoEmbed = $('<iframe></iframe>');
         videoEmbed.attr('src', youtube.generateEmbedUrl(video.youtubeId));
         videoEmbed.attr('width', 560);
         videoEmbed.attr('height', 315);
+
         var videoWatcher = $('#video-watcher');
         videoWatcher.hide();
-        videoWatcher.html(videoEmbed);
+        videoWatcher.empty();
+        videoWatcher.append(videoTitle);
+        videoWatcher.append(videoEmbed);
         videoWatcher.fadeIn();
     });
 
