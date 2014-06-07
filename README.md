@@ -1,5 +1,9 @@
 # GDI JS 202: AJAX/JSON
 
+Slides are built using the [Yeoman Reveal generator template](https://github.com/gdichicago/yeoman_reveal_template). See the repo for instructions on making modifications to the slides.
+
+Slides and materials are hosted [here](http://gdichicago.com/classes/js202/workshop).
+
 ## Course description
 
 In this afternoon workshop, we'll learn about AJAX and JSONP, the technologies that let websites pull information in dynamically from servers. These technologies are essential to modern websites.
