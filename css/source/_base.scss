@@ -4,7 +4,7 @@ body {
 }
 
 #container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   font-size: $fontSize * 0.25;
   padding: 100px 0px;
@@ -27,6 +27,7 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
   padding-bottom: 5px;
+  margin: 0;
 }
 
 h1 {
@@ -42,6 +43,11 @@ h2 {
 h3 {
   color: $light;
   font-size: $fontSize * 1.1;
+}
+
+h4 {
+  color: $dark;
+  font-size: $fontSize * 0.8;
 }
 
 header {
