@@ -36,5 +36,15 @@
     "jquery-3-ajax.html",
     "100-jquery.html",
     "omg.html",
-    "debugging.html"
+    "types-of-requests.html",
+    "get.html",
+    "post.html",
+    "debugging.html",
+    "rabbit-hole.html",
+    "develop-it-exercise-2.html",
+    "ajax-servers.html",
+    "cross-domain-policy.html",
+    "common-gotchas.html",
+    "big-donts.html",
+    "questions.html"
 ]
