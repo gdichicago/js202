@@ -1,3 +1,22 @@
 <h2>AJAX + Servers</h2>
 
-<p>Please change me!</p>
+<p>Instead of using <code>$.ajax()</code> with a file, you can use it with an actual server, too.</p>
+
+<pre><code class="js">$.ajax({
+  type: "GET",
+  url: "/api/books",
+  dataType: "json",
+  data: {'sortBy': 'author'},
+  success: processBooks
+});
+
+$.ajax({
+  type: "POST",
+  url: "/api/book/new",
+  dataType: "json",
+  data: {'title': 'I, Robot', 'author': 'I. Asimov'}
+  success: processBoooks
+});
+</code></pre>
+
+<p><small>This code won't really work - it's just an example.</small></p>
