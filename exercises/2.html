@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <title>Girl Develop It</title>
+  <meta charset="utf-8">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,800' rel='stylesheet' type='text/css'>
+  <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="../css/website.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Girl Develop It Chicago</h1>
+        <h2>JS 202</h2>
+        <h3>Exericse 2: AJAX</h3>
+      </header>
+
+      <article>
+        <p>In this exercise, you'll use jQuery's <code>$.ajax()</code> function to pull in a JSON file and turn it into DOM, using the same functions as we did for the in-page JSON.</p>
+
+        <h4>The Setup</h4>
+
+        <p><strong>Firefox users only:</strong> you can skip this section.</p>
+
+        <p>Chrome has a permissions policy for local <code>file://</code> testing that disallows AJAX requests, and some APIs do not work on <code>file://</code> URLs in all browsers, so if possible, we recommend trying to run a simple server on your machine. The following steps should work on a Mac:</p>
+
+        <ol>
+          <li>Open Terminal</li>
+          <li>Navigate to your project directory (wherever you will save the files) by using the <code>cd</code> command.</li>
+          <li>Run this command:  <code>python -m SimpleHTTPServer</code></li>
+          <li>If successful, you should then be able to access your project folder by typing
+          this URL in the browser bar: <code>http://localhost:8000</code></li>
+        </ol>
+
+        <p>If you are not on a Mac or can't do that for some reason, then we recommend using Firefox or pairing with someone who can run a local server.</p>
+
+        <p><strong>To stop the server:</strong> go into your Terminal window and hit Control + C</p>
+
+        <h4>Coding</h4>
+
+        <p>Go through these steps, and do as many as you can in the time we have:</p>
+        <ul>
+          <li>Start with your solution from the last exercise, use the completed version (in the solutions folder).</li>
+          <li>The webpage currently has an in-page JSON describing the videos, and we want to put that into a separate file. Make a file in your project folder called videos.json, and copy the value of the videos variable into that file. Delete the variable from the page.</li>
+          <li>Use the jQuery $.ajax function to bring in the data from videos.json. In the success callback, iterate through the videos and render each one into the page, using the addVideoToList function that we already have. Look at the slides and the jQuery documentation to remember how to use the $.ajax function.</li>
+          <li>Bonus: Create another JSON file with another set of videos, and bring that into the page as well. Try to generalize your code so that you could bring any number of JSON files in.</li>
+        </ul>
+
+        <p>Make sure that you use your browser developer tools to make debugging easier while working on this. Check for errors, and use console.log() to figure out how far your code makes it, and what the values of your variables are along the way.</p>
+
+        <h4>
+          <a href="../materials/solutions/2_ajax.html">View solution!</a>
+        </h4>
+      </article>
+    </div>
+  </body>
+</html>
