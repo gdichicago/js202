@@ -1,0 +1,16 @@
+<h2>jQuery + JSON + DOM</h2>
+
+<p>Or we can avoid all of that JavaScript and use jQuery instead!</p>
+
+<pre><code class="js">$(document).ready(function() {
+  var aboutMe = {
+    "firstName": "Lauren",
+    "lastName": "Scott",
+    "favoriteThings": ["haikus", "ruby"]
+  };
+
+  var $p = $('&lt;p&gt;');
+  $p.html(aboutMe.firstName + ' ' + aboutMe.lastName);
+  $p.append('My favorite things are ' + aboutMe.favorireThings.join(','));
+});
+</code></pre>

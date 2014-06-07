@@ -1,0 +1,14 @@
+<h2>JS + JSON + DOM</h2>
+
+<p>We can use JavaSript to insert our JSON into the DOM.</p>
+
+<pre><code class="js">var myProfile = {
+  "firstName": "Liz",
+  "lastName": "Howard",
+  "cats": ["Tribbles", "Jean Claws"]
+};
+
+var p = document.createElement('p');
+p.innerHTML = myProfile.firstName + ' ' + myProfile.lastName;
+p.innerHTML += 'My cats are ' + myProfile.cats.join(',');
+</code></pre>

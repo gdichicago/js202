@@ -1,1 +1,15 @@
-["index.md"]
+[
+    "ajax-json.html",
+    "welcome.html",
+    "note.html",
+    "review-html-js-together.html",
+    "classic-apps.html",
+    "static-content-enhanced.html",
+    "dynamic-content.html",
+    "storing-data-json.html",
+    "json-what-is-it.html",
+    "json-an-example.html",
+    "js-json-dom.html",
+    "jquery-json-dom.html",
+    "develop-it-exercise-1.html"
+]
