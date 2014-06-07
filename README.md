@@ -1,64 +1,57 @@
-# GDI Chicago Slides Template
+# GDI JS 202: AJAX/JSON
 
-These slides are built using Yeoman, with the Reveal generator. It will compile your Sass (located in `css/source`) automatically.
+## Course description
 
-If you add a new Sass file that isn't a partial, you need to edit the Gruntfile. You'll see examples of where this change needs to be made.
+In this afternoon workshop, we'll learn about AJAX and JSONP, the technologies that let websites pull information in dynamically from servers. These technologies are essential to modern websites.
 
-# Getting started
+This workshop includes hands-on exercises to practice your skills and includes homework for additional practice.
 
-Download a zip of the [tagged release](https://github.com/gdichicago/yeoman_reveal_template/releases) you want to use. I always recommend the most recent, but there may be different versions.
+This is intended to be a follow-up workshop for JS101 and JS201, or for those already comfortable with JavaScript and jQuery looking to expand their skills.
 
-Unzip the file and place the contents in the Git repo of the class you're creating.
 
-This repository includes a `.gitignore` that you should *really* keep. Its contents:
+**Cost:** $45
 
-```
-node_modules
-*.log
-.sass-cache
-```
+**Dates:** Saturday, July 12 from 12-4 PM
 
-*Note*: the `bower_components` folder isn't ignored. This is commonly ignored, but this template is designed to be packaged and uploaded as-is without any special tweaks (other than creating slides).
+**Location:** Dev Bootcamp, 351 W Hubbard, Floor 7
 
-You should have npm and Sass (Ruby gem) installed already.
+*A limited number of scholarships are available for those with a financial hardship. To apply, click here. Do not RSVP for the event. The deadline to apply for a scholarship is May 25. Scholarship applicants will be notified shortly after the deadline. Class capacity does not impact scholarship students.*
 
-```
-$ npm install -g yeoman
-$ npm install -g generator-reveal
-$ npm install
-```
 
-And then you're ready.
+### Prerequisites:
 
-# Usage
-
-To add a new (HTML) slide:
-
-```
-$ yo reveal:slide "Slide name"
-```
-
-If you want to use Markdown:
-
-```
-$ yo reveal:slide "Slide Title" --markdown
-```
-
-To watch:
-
-```
-$ grunt server
-```
-
-To compile for distribution (`slideshow` folder):
-
-```
-$ grunt dist
-```
-
-# End result
+Attendees should be comfortable with HTML5 and CSS3: specifically, you should understand the box model, floats, CSS resets, and HTML5 standards and tags. Additionally, you should be familiar with JavaScript syntax, data structures, conditionals, loops, and event handling.
 
 You should have:
 
-* a website in the `workshop` folder
-* slides in the `slideshow` folder
+(a) taken Intro or Intermediate HTML/CSS through Girl Develop It, or
+
+(b) built and managed websites on your own,
+
+**And also:**
+
+(a) taken JS101 (full 4-week series, or completed all exercises and homework for the self-paced workshop) and JS201 through Girl Develop It, or
+
+(b) have completed a self-study JavaScript course, and are familiar with syntax, arrays, conditionals, for and while loops, event handling, and jQuery.
+
+If you need to brush up on your HTML and CSS, you can review The Beginner's Guide to HTML and CSS and The Advanced Guide to HTML and CSS. To brush up on jQuery, see Try jQuery.
+
+
+### Tech requirements:
+
+ - Your laptop (Mac, PC, or Linux are all okay).
+ - A modern web browser - either Chrome or Firefox with Firebug installed.
+ - A text editor. We recommend Sublime Text 2 (free; available for both Mac and PC).
+
+### Topics covered:
+
+ - Brief review of JavaScript and HTML's intense friendship
+ - What is JSON? Writing it and reading it
+ - Using JavaScript to insert JSON into the DOM
+ - How the web interacts with users
+ - What is AJAX?
+ - XMLHttpRequests and responses
+ - jQuery + AJAX = <3
+ - Debugging AJAX requests
+ - AJAX and servers; what is cross-domain?
+ - Common AJAX gotchas
