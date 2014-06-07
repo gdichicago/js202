@@ -1,0 +1,17 @@
+<h2>100% jQuery</h2>
+
+<p>Remember those 5 steps we went through previously? This jQuery function will handle all of that. At once. In one function.</p>
+
+<pre><code class="js">$.ajax({type: "GET",
+  url: "books.json",
+  dataType: "json",
+  success: function(books) {
+    for (var i = 0; i &lt; books.length; i++) {
+      var book = books[i];
+      var p = $('&lt;p&gt;');
+      p.html(book.title + ' by ' + book.author);
+      $('body').append(p);
+    }
+  }
+});
+</code></pre>
