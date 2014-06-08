@@ -1,0 +1,11 @@
+<h2>(2) Sending Request</h2>
+
+<pre><code class="js">function sendRequest() {
+  url="books.json";
+  request.open("GET", url, true);
+  request.onreadystatechange = processRequest;
+  request.send(null);
+}
+</code></pre>
+
+<p>You can open either a GET (fetch information) or POST (update information) connection to a URL, specify a callback function, and then send the request. </p>

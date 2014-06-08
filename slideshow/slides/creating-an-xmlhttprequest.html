@@ -1,0 +1,18 @@
+<h2>(1) Create Request</h2>
+
+<pre><code class="js">var request;
+try {
+  if (typeof ActiveXObject != 'undefined') {
+    request = new ActiveXObject('Microsoft.XMLHTTP');
+  } else if (window["XMLHttpRequest"]) {
+    request = new XMLHttpRequest();
+  }
+} catch (e) {
+  request = false;
+}
+if (!request ) alert("Error initializing XMLHttpRequest!");
+</code></pre>
+
+<p>IE implemented XMLHR differently than the other browsers, so you must use all this code to get it cross-browser-compatible.</p>
+
+<p>Most Javascript libraries/APIs offer wrapper functions for this.</p>

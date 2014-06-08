@@ -6,7 +6,7 @@ body {
   background-color: #f2f2f2; }
 
 #container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   font-size: 0.5em;
   padding: 100px 0px; }
@@ -26,7 +26,8 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 800;
-  padding-bottom: 20px; }
+  padding-bottom: 5px;
+  margin: 0; }
 
 h1 {
   color: #e64c66;
@@ -39,6 +40,10 @@ h2 {
 h3 {
   color: #1bbc9b;
   font-size: 2.2em; }
+
+h4 {
+  color: #2d3e50;
+  font-size: 1.6em; }
 
 header {
   padding-bottom: 20px; }
